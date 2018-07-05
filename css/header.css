@@ -68,3 +68,13 @@ header .social {
   margin: 30px 150px 0 0;
 }
 
+@media screen and (max-width:780px) {
+  .sbox {
+    position: absolute;
+    left: 50%;
+  }
+  header .social{
+    display: none;
+  }
+
+}

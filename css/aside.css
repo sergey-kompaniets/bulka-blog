@@ -4,8 +4,8 @@
   position: absolute;
   right: 0;
   width: 400px;
-  transform: translateX(480px);
-  transition: transform 250ms ease-in-out;
+  transform: translateX(600px);
+  transition: transform 350ms ease-in-out;
 }
 
 input[type="checkbox"]:checked ~ .sidebar-menu {
@@ -223,5 +223,29 @@ input:focus {
   background-color: rgba(65, 65, 88, 0.78);
 }
 
+@media screen and (max-width:780px) {
+  .sidebar-menu {
+    height: 200vh;
+    background: rgba(65, 65, 88, 0.91);
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateX(800px);
+    transition: transform 350ms ease-in-out;
+    z-index: 1;
+  }
 
+  .form {
+    margin: 0 auto;
+    border: 1px solid rgb(53, 53, 76) ;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .wrap{
+    width: 40%;
+    top: 39%;
+    left: 27%;
+  }
+}
 
