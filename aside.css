@@ -1,0 +1,251 @@
+.sidebar-menu {
+  height: 1200px;
+  background: rgba(65, 65, 88, 0.91);
+  position: absolute;
+  right: 0;
+  width: 400px;
+  transform: translateX(600px);
+  transition: transform 350ms ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .sidebar-menu {
+  transform: translateX(0);
+  
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebar-icon-toggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 30px;
+  right: 35px;
+  height: 22px;
+  width: 22px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: rgba(67,71,54,1);
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 4px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 4px;
+}
+
+input[type=checkbox]:checked ~ .sidebar-icon-toggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -10px;
+}
+
+.bar-container {
+  margin: 40px 20px;
+  max-width: 350px;
+  display: grid;
+  grid-template-rows: 150px 300px 200px 400px;
+
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+}
+
+.profile img {
+  padding: 5px;
+  width: 100px;
+  border: 1px solid rgb(53, 53, 76);
+  border-radius: 50%;
+}
+
+/*-------FORM------------*/
+
+.form {
+  
+  border: 1px solid rgb(53, 53, 76) ;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-style { 
+  background: rgb(53, 53, 76);
+  padding: 20px; 
+  width: 250px; 
+  margin-bottom: 20px; 
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1em;
+  font-weight: 100;
+  color: #fff;
+}
+
+.form-style::placeholder {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.70);
+  
+}
+
+.form-button {
+  margin: 0 auto;
+  border: 1px solid rgb(53, 53, 76);
+  border-radius: 10px;
+  background: rgb(53, 53, 76);
+  display: inline-block;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 6px 24px;
+  text-decoration: none;
+
+}
+
+.form-button:hover {
+  background-color: rgba(65, 65, 88, 0.78);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.form-button:active {
+  position: relative;
+  top: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*----------------SEARCH*/
+
+.wrap{
+  width: 70%;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.search-term {
+  position: absolute;
+  width: 100%;
+  border: 3px solid rgb(53, 53, 76);
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+}
+
+.search-term:focus{
+  color: black;
+}
+
+.search-button {
+  position: absolute;  
+  right: -14px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(53, 53, 76);
+  background: rgb(53, 53, 76);
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.tags-flex {
+
+  padding: 10px;
+  width: 350px;
+  border: 1px solid rgb(53, 53, 76);
+  margin: 90px auto 20px auto;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag{
+  padding: 5px;
+  margin: 3px 3px 0 0;
+  border: 1px solid rgb(53, 53, 76);
+  background: rgb(53, 53, 76);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: rgba(65, 65, 88, 0.78);
+}
+
+@media screen and (max-width:780px) {
+  .sidebar-menu {
+    height: 200vh;
+    background: rgba(65, 65, 88, 0.91);
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateX(800px);
+    transition: transform 350ms ease-in-out;
+    z-index: 1;
+  }
+
+  .form {
+    margin: 0 auto;
+    border: 1px solid rgb(53, 53, 76) ;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .wrap{
+    width: 40%;
+    top: 39%;
+    left: 27%;
+  }
+}
+

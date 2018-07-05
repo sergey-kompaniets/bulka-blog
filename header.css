@@ -1,0 +1,80 @@
+header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
+  position: relative;
+  width: 100%;
+  height: 75px;
+  
+}
+
+
+.grid-header {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+}
+
+.grid-logo {
+  display: grid;
+  grid-template-columns: 60px 10px auto;
+  margin: 18px 0 18px 40px;
+
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background: rgb(33, 33, 33);
+}
+
+.logo-cat {
+  height: 40px;
+}
+
+.sbox {
+  border: solid 1px rgba(67,71,54,1);
+  border-radius: 3px;
+  color: #262626;
+  outline: 0;
+  padding: 3px 10px 3px 26px;
+  z-index: 2;
+  width: 200px;
+  height: 30px;
+  margin-top: 25px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 61px 5px;
+}
+
+.sbox:focus {
+  border: 1px solid #03658c;
+  padding-left: 25px;
+  background-position: 5px;
+}
+
+
+header .social {
+  margin: 30px 150px 0 0;
+}
+
+@media screen and (max-width:780px) {
+  .sbox {
+    position: absolute;
+    left: 50%;
+  }
+  header .social{
+    display: none;
+  }
+
+}

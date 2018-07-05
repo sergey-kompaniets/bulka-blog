@@ -1,0 +1,22 @@
+footer {
+	margin-top: 10px;
+	background: #fff;
+	height: 75px;
+	display: grid;
+	grid-template-columns: auto auto auto ;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-line:after {
+	content: '';
+	border-right: 1px solid black;
+	margin: 0 5px 0 5px;
+}
+
+.autor-name {
+	color: rgba(65, 65, 88, 0.91);
+}
+
