@@ -38,6 +38,9 @@ h2 {
 
 h3 {
 	margin: 0 10px 10px 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 h4{
@@ -52,7 +55,7 @@ h5{
 }
 
 a:hover {
- 	color: rgb(53, 53, 76);
+ 	color: #03658cd6;
  	transition: color 0.3s ease;
  }
 
